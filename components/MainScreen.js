@@ -31,16 +31,16 @@ const Home = () => {
           A better way to get work done
         </motion.p>
         <h1 className='text-4xl sm:text-5xl font-bold text-black nameBackground '>
-          "CONTENT IS KEY TO SUCCESS!"
+          &quot;CONTENT IS KEY TO SUCCESS!&quot;
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-black skillBackground sm:overflow-x-hidden overflow-y-hidden'>
           {text}
           <Cursor cursorColor='#FF1493' />
         </h2>
         <p className='text-black py-4 max-w-[700px]'>
-          I'm a full-stack developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I'm focused on
-          building responsive full-stack web applications.
+          I&apos;m a full-stack developer specializing in building (and
+          occasionally designing) exceptional digital experiences. Currently,
+          I&apos;m focused on building responsive full-stack web applications.
         </p>
         <div>
           <motion.button

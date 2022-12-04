@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 const signup = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   const [user, setUser] = useState({
     name: "",

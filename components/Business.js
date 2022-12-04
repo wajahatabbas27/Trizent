@@ -38,11 +38,11 @@ const Business = () => {
       <div className='lg:w-[1000px] flex flex-col items-center space-y-10'>
         <h1 className='text-4xl font-bold'>Develop your business with us.</h1>
         <p className=' text-xl tracking-wide'>
-          There is no better place to build your business than with us if you're
+          There is no better place to build your business than with us if you are
           looking to do so. We are committed to supporting your success and
-          offer the expertise, tools, and resources needed. We'll collaborate
+          offer the expertise, tools, and resources needed. We will collaborate
           with you to create a special strategy that satisfies your requirements
-          and advances your objectives. We're here to support you as you expand
+          and advances your objectives. We are here to support you as you expand
           your company/business and realise your full potential. To begin, get
           in touch with us.
         </p>
