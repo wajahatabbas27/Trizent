@@ -59,7 +59,7 @@ const Login = () => {
             className='cursor-pointer  px-3 py-2 text-center m-3 border-none text-white bg-gradient-to-r from-indigo-300 to-blue-600 rounded-md hover:to-blue-800 active:transform active:scale-95'
           />
           <div className='text-md flex flex-col md:flex-row p-3'>
-            Haven't registered yet?
+            Haven&apos;t registered yet?
             <p
               className='text-blue-500 underline cursor-pointer ml-1'
               onClick={() => router.push("/signup")}
