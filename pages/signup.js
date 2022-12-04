@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { useRouter } from "next/router";
 
-const signup = () => {
+const Signup = () => {
   // const router = useRouter();
 
   const [user, setUser] = useState({
@@ -120,4 +120,4 @@ const signup = () => {
   );
 };
 
-export default signup;
+export default Signup;
