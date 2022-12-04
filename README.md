@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NFTIZE SERVICES
 
-## Getting Started
+- create navbar responsive
+- create the body services cards
+- create the footer
+- add authentication using the firebase
+- save data in firebase with the id
 
-First, run the development server:
+## Firebase Authentication
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- create 3 pages - login/signUp/Dashboard
+- Dashboard is the page that will be protected and will open for the authenticated user
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dropdown Navbar
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- We will create a drop down navbar for the large screen and for the small mobile screen we require button to open menu and cross button to close all the way.
+- Dosre component mein array ko bnake hm isko show kraeinge.
+- Uske ilawa hm position iski absolute kreinge relative to navbar ki services.
+- When we click the dropdown menu, It should go away
+- So to implement it we will apply state
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Now we will set the position inside the services in the navbar
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- onMouseEnter={() => setDropdown(true)}
+  onMouseLeave={() => setDropdown(false)}
 
-## Learn More
+- We add these two logics all the way to apply the logic for the screen to show the navbar
 
-To learn more about Next.js, take a look at the following resources:
+- main logic is of the useState hook to use things that is it all the way.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- We use eventListener onMouseEnter , onMouseLeave to show and to leave the dropdown.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Extra information
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- items-center --- vertically center krta hai
+- justify-center --- horizontally center krta hai
+- import { FaTree } from "react-icons/fa";
+- npm install --legacy-peer-deps     --- for peer dependencies issue
