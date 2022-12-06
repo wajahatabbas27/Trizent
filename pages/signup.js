@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 const Signup = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
   const [user, setUser] = useState({
     name: "",
@@ -40,7 +40,7 @@ const Signup = () => {
     <div className=' flex flex-col justify-center items-center px-20 py-10 mx-auto  h-screen'>
       <form
         onSubmit={onSubmit}
-        className='flex flex-col bg-white shadow-lg rounded-md  sm:w-[400px] sm:max-w-full items-center justify-center'
+        className='flex flex-col bg-white shadow-lg rounded-md  sm:w-[400px] sm:max-w-full items-center justify-center mt-28'
       >
         <h1 className='text-3xl text-center p-6 rounded-t-lg text-white w-full bg-gradient-to-r from-blue-800 to-indigo-200'>
           SignUp

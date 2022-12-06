@@ -23,7 +23,7 @@ const Login = () => {
     <div className='flex flex-col items-center justify-center px-20 py-10 mx-auto h-screen '>
       <form
         onSubmit={onSubmit}
-        className='flex flex-col sm:w-[400px] sm:max-w-full items-center justify-center bg-white shadow-lg'
+        className='flex flex-col sm:w-[400px] sm:max-w-full mt-20 items-center justify-center bg-white shadow-lg'
       >
         <h1 className='text-3xl text-center text-white bg-gradient-to-r from-blue-800 to-indigo-200 w-full rounded-t-lg p-6'>
           Login
