@@ -23,7 +23,7 @@ const Navbar = () => {
         <FaTree className='text-4xl' />
       </div>
       <div className='hidden lg:flex space-x-6 items-center justify-center text-center '>
-        <ul className='flex space-x-6 text-center justify-center  items-center h-[10vh] '>
+        <ul className='flex space-x-6 text-center justify-center  items-center h-[13vh] '>
           {navItems.map((item) => {
             // if services are there so render
             if (item.title === "Services") {

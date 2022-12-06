@@ -55,7 +55,7 @@ const Business = () => {
         {icons.map((icon, i) => (
           <div
             key={i}
-            className='flex flex-col bg-white  md:w-[400px] md:h-[400px] mb-4 rounded-lg shadow-lg  items-center hover:transition-transform hover:scale-105'
+            className='flex flex-col bg-white  md:w-[300px] md:h-[400px] mb-4 rounded-lg shadow-lg  items-center hover:transition-transform hover:scale-105'
           >
             <img
               src={icon.image}

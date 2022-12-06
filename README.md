@@ -30,9 +30,19 @@
 
 - We use eventListener onMouseEnter , onMouseLeave to show and to leave the dropdown.
 
+
+## Horizontal scrollBar
+- overflow-x-scroll   --  isse scroll krega x axis pe.
+- whitespace-nowrap   -- asal mein isse scroll krna start krdega
+
+### hide scrollbar npm package
+ - yarn add tailwind-scrollbar-hide
+ - scrollbar-hide
+
 ### Extra information
 
 - items-center --- vertically center krta hai
 - justify-center --- horizontally center krta hai
 - import { FaTree } from "react-icons/fa";
 - npm install --legacy-peer-deps     --- for peer dependencies issue
+- hover:scale-105 ease-in-out duration-300            ---  good hover display
