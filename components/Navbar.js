@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes, FaTree } from "react-icons/fa";
+// import { FaBars, FaTimes, FaTree } from "react-icons/fa";
 import { navItems } from "../data/navItems";
 import SignUpButton from "./SignUpButton";
 import Dropdown from "./Dropdown";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTree
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
+
 
 const Navbar = () => {
   // dropdown show on click
@@ -99,6 +110,52 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      {/* social icons are hidden will only show up when the screen greater than large */}
+      <div className='hidden lg:flex flex-col fixed left-0 top-[35%]'>
+        <ul>
+          <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 p-4'>
+            <a
+              href=''
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+            <a
+              href=''
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+            <a
+              href=''
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Mail <HiOutlineMail size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-b from-[#405DE6] to-[#F77737] via-[#C13584]'>
+            <a
+              href=''
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center w-full justify-between text-gray-300'
+            >
+              Instagram <FaInstagram size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

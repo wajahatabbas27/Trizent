@@ -9,7 +9,7 @@ const Services = () => {
   //   Slide Right function
   const slideRight = () => {
     const slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 500;
+    slider.scrollLeft = slider.scrollLeft + 380;
   };
 
   //   Slide left function
@@ -54,7 +54,7 @@ const Services = () => {
       <div
         id='slider'
         className='w-full flex rounded-md overflow-hidden gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide bg-white py-4 md:mx-28'
-        onScroll={removeButton}
+        // onScroll={removeButton}
       >
         {/* left arrow */}
         {left && (
