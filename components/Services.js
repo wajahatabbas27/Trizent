@@ -49,7 +49,10 @@ const Services = () => {
   };
 
   return (
-    <div className='h-[500px]  w-full flex justify-center items-center bg-gradient-to-br from-indigo-300 to-blue-800 via-green-300'>
+    <div
+      id='services'
+      className='h-[500px]  w-full flex justify-center items-center bg-gradient-to-br from-indigo-300 to-blue-800 via-green-300'
+    >
       {/* scroll cards  */}
       <div
         id='slider'

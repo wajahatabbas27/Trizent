@@ -33,13 +33,16 @@ const Business = () => {
   ];
 
   return (
-    <div className='px-10 py-44 lg:flex bg-gradient-to-b  from-indigo-200 to-blue-800 space-x-8'>
+    <div
+      id='team'
+      className='px-10 py-44 lg:flex bg-gradient-to-b  from-indigo-200 to-blue-800 space-x-8'
+    >
       {/* Build business heading */}
-      <div className='lg:w-[1000px] flex flex-col items-center space-y-10'>
+      <div className='lg:w-[1000px] flex flex-col items-center space-y-10 lg:pl-20'>
         <h1 className='text-4xl font-bold'>Develop your business with us.</h1>
         <p className=' text-xl tracking-wide'>
-          There is no better place to build your business than with us if you are
-          looking to do so. We are committed to supporting your success and
+          There is no better place to build your business than with us if you
+          are looking to do so. We are committed to supporting your success and
           offer the expertise, tools, and resources needed. We will collaborate
           with you to create a special strategy that satisfies your requirements
           and advances your objectives. We are here to support you as you expand
