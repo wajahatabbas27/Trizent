@@ -70,7 +70,7 @@ const Footer = () => {
         <h1 className='text-xl underline font-semibold py-3 '>Resources</h1>
         <ul className='space-y-1 '>
           {pricing.map((item) => (
-            <li className='text-base hover:underline hover:font-medium'>
+            <li key={item} className='text-base hover:underline hover:font-medium'>
               {item}
             </li>
           ))}
