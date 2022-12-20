@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div
       id='home'
-      className='bg-gradient-to-t from-indigo-200 to-blue-800 h-screen w-full  pt-32 xs:pt-0 pb-18 xs:pb-0 mb-0  '
+      className='bg-blue-200 h-screen w-full  pt-32 xs:pt-0 pb-18 xs:pb-0 mb-0  '
     >
       {/* Container */}
       <div className='max-w-[1000px] h-full mx-auto px-8 flex flex-col justify-center '>

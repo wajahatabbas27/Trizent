@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Services = () => {
   // Modal handling
   const [open, setOpen] = useState(false);
-
+  const [modalData, setModalData] = useState();
   // left & right button
   const [right, setRight] = useState(true);
   const [left, setLeft] = useState(true);
@@ -56,7 +56,7 @@ const Services = () => {
   return (
     <div
       id='services'
-      className='h-[500px]  w-full flex  justify-center items-center bg-gradient-to-br from-indigo-300 to-blue-800 via-green-300'
+      className='h-[700px]  w-full flex  justify-center items-center bg-blue-400'
     >
       {/* scroll cards  */}
       <div
@@ -78,37 +78,37 @@ const Services = () => {
           </button>
         )}
 
-        {serviceDropdown.map((item, i) => (
-          <>
-            <Modal open={open} onClose={(e) => setOpen(false)}>
-              <div className=' h-screen bg-blue-200 m-8 md:m-16 lg:m-20 shadow-lg flex flex-col  items-center '>
-                <h1 className='text-3xl font-semibold pt-16 text-center'>
-                  {item.title}
-                </h1>
-                <p className='text-sm md:text-lg py-16 text-center px-4  sm:px-8 md:px-16 lg:px-36'>
-                  {item.description}
-                </p>
-                <button
-                  className='flex justify-center cursor-pointer w-44 px-3 py-2 text-center m-3 border-none text-white bg-gradient-to-r from-indigo-300 to-blue-600 rounded-md hover:to-blue-800 active:transform active:scale-95'
-                >
-                  <Link to='contact' onClick={() => setOpen(false)}>
-                    Order Now
-                  </Link>
-                </button>
-              </div>
-            </Modal>
-            <div
-              key={i}
-              className='mx-20 bg-gray-200  h-[300px] min-w-[190px] sm:min-w-[220px] rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-300 shadow-lg flex flex-col justify-center items-center'
-              onClick={() => setOpen(true)}
-            >
-              <img src={item.image} alt='services' className='w-[150px]' />
-              <h1 className='text-base  md:text-lg font-bold pt-10'>
-                {item.title}
-              </h1>
-            </div>
-          </>
+        {serviceDropdown.map((item) => (
+          <div
+            key={item.id}
+            className='mx-20 bg-gray-200  h-[300px] min-w-[190px] sm:min-w-[220px] rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-300 shadow-lg flex flex-col justify-center items-center'
+            onClick={() => {
+              setOpen(true);
+              setModalData(item);
+            }}
+          >
+            <img src={item.image} alt='services' className='w-[150px]' />
+            <h1 className='text-base  md:text-lg font-bold pt-10'>
+              {item.title}
+            </h1>
+          </div>
         ))}
+
+        <Modal open={open} onClose={(e) => setOpen(false)}>
+          <div className=' h-screen bg-blue-200 m-8 md:m-16 lg:m-20 shadow-lg flex flex-col  items-center '>
+            <h1 className='text-3xl font-semibold pt-16 text-center'>
+              {modalData?.title}
+            </h1>
+            <p className='text-sm md:text-lg py-16 text-center px-4  sm:px-8 md:px-16 lg:px-36'>
+              {modalData?.description}
+            </p>
+            <button className='flex justify-center cursor-pointer w-44 px-3 py-2 text-center m-3 border-none text-white bg-gradient-to-r from-indigo-300 to-blue-600 rounded-md hover:to-blue-800 active:transform active:scale-95'>
+              <Link to='contact' onClick={() => setOpen(false)}>
+                Order Now
+              </Link>
+            </button>
+          </div>
+        </Modal>
         {/* right button  */}
         {right && (
           <button

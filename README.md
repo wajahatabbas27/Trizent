@@ -39,6 +39,10 @@
  - yarn add tailwind-scrollbar-hide
  - scrollbar-hide
 
+### Modal 
+
+- Modal ko hm map ke bahar rheinge take wo sahi rahe bahar aur bas item pe usko call krleinge.
+
 ### Extra information
 
 - items-center --- vertically center krta hai

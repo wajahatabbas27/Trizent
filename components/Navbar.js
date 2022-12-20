@@ -26,7 +26,7 @@ const Navbar = () => {
   const handleclick = () => setNav(!nav);
 
   return (
-    <nav className='fixed w-full h-[100px] flex px-2 md:px-12 justify-between items-center z-30 bg-gradient-to-b from-indigo-200 to-blue-800 text-black'>
+    <nav className='fixed w-full h-[100px] flex px-2 md:px-12 justify-between items-center z-30 bg-blue-200 text-black'>
       <div className='flex w-48 items-center justify-between'>
         <Link to='home'>
           <h1 className='cursor-pointer text-4xl'>TRIZENT</h1>
@@ -54,7 +54,7 @@ const Navbar = () => {
             // returning list items for everything here!
             return (
               <li
-                className=' text-xl cursor-pointer hover:text-black'
+                className=' text-xl cursor-pointer hover:underline'
                 key={item.id}
               >
                 <Link to={item.path}>{item.title}</Link>

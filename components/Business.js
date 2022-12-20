@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Business = () => {
   const icons = [
@@ -33,10 +34,7 @@ const Business = () => {
   ];
 
   return (
-    <div
-      id='team'
-      className='px-10 py-44 lg:flex bg-gradient-to-b  from-indigo-200 to-blue-800 space-x-8'
-    >
+    <div id='team' className='px-10 py-44 lg:flex bg-blue-200 space-x-8'>
       {/* Build business heading */}
       <div className='lg:w-[1000px] flex flex-col items-center space-y-10 lg:pl-20'>
         <h1 className='text-4xl font-bold'>Develop your business with us.</h1>
@@ -49,8 +47,8 @@ const Business = () => {
           your company/business and realise your full potential. To begin, get
           in touch with us.
         </p>
-        <button className='w-32 flex justify-center border-2 border-white mt-10 p-3 text-lg rounded-md hover:bg-blue-700 hover:border-blue-700 text-white active:outline-none active:transform active:scale-95 '>
-          order now
+        <button className='w-32 flex justify-center border-2 border-black mt-10 p-3 text-lg rounded-md hover:bg-blue-700 hover:border-blue-700 text-black active:outline-none active:transform active:scale-95 '>
+          <Link to='contact'>Order Now</Link>
         </button>
       </div>
       {/* icons  */}

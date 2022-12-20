@@ -34,8 +34,8 @@ const Footer = () => {
           Content Creation Services
         </h1>
         <ul className='space-y-1 '>
-          {serviceDropdown.map((item) => (
-            <li key={item} className='text-base hover:underline hover:font-medium'>
+          {serviceDropdown.map((item,i) => (
+            <li key={i} className='text-base hover:underline hover:font-medium'>
               {item.title}
             </li>
           ))}
@@ -69,8 +69,8 @@ const Footer = () => {
         <h1 className='text-xl underline font-semibold pb-3 '>Pricing</h1>
         <h1 className='text-xl underline font-semibold py-3 '>Resources</h1>
         <ul className='space-y-1 '>
-          {pricing.map((item) => (
-            <li key={item} className='text-base hover:underline hover:font-medium'>
+          {pricing.map((item,i) => (
+            <li key={i} className='text-base hover:underline hover:font-medium'>
               {item}
             </li>
           ))}
