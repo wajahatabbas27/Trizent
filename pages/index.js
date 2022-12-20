@@ -3,7 +3,8 @@ import Business from "../components/Business";
 import Contact from "../components/Contact";
 import MainScreen from "../components/MainScreen";
 import Services from "../components/Services";
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
+import SlickServices from "../components/SlickServices";
 
 export default function Home() {
   return (
@@ -15,10 +16,12 @@ export default function Home() {
       <main>
         <MainScreen />
         <Services />
+        {/* <SlickServices/> */}
         <Business />
         <Contact />
         <Footer />
       </main>
+
     </div>
   );
 }

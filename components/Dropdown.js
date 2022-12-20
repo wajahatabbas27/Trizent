@@ -12,7 +12,7 @@ const Dropdown = () => {
         {serviceDropdown.map((item) => (
           <li
             key={item.id}
-            className='w-full flex items-center justify-center p-2 hover:bg-blue-300 border border-black cursor-pointer  '
+            className='w-full flex items-center justify-center p-2 hover:bg-blue-300 border border-black cursor-pointer '
           >
             <Link to={item.path}>{item.title}</Link>
           </li>
