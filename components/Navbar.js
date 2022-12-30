@@ -36,22 +36,22 @@ const Navbar = () => {
       <div className='hidden lg:flex space-x-6 items-center justify-center text-center '>
         <ul className='flex space-x-6 text-center justify-center  items-center h-[13vh] '>
           {navItems.map((item) => {
-            // if services are there so render
-            if (item.title === "Services") {
-              return (
-                <li
-                  className=' text-xl cursor-pointer hover:text-black h-full flex items-center '
-                  key={item.id}
-                  onMouseEnter={() => setDropdown(true)}
-                  onMouseLeave={() => setDropdown(false)}
-                >
-                  <Link to={item.path}>{item.title}</Link>
-                  {dropdown && <Dropdown />}
-                </li>
-              );
-            }
+            // // if services are there so render
+            // if (item.title === "Services") {
+            //   return (
+            //     <li
+            //       className=' text-xl cursor-pointer hover:text-black h-full flex items-center '
+            //       key={item.id}
+            //       onMouseEnter={() => setDropdown(true)}
+            //       onMouseLeave={() => setDropdown(false)}
+            //     >
+            //       <Link to={item.path}>{item.title}</Link>
+            //       {dropdown && <Dropdown />}
+            //     </li>
+            //   );
+            // }
 
-            // returning list items for everything here!
+            // // returning list items for everything here!
             return (
               <li
                 className=' text-xl cursor-pointer hover:underline'
@@ -62,7 +62,6 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <SignUpButton />
       </div>
 
       {/* responsive bars icon button for smaller screens like mobile */}
@@ -104,11 +103,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
+        {/* <li className='py-6 text-4xl'>
           <Link onClick={handleclick} to='contact' smooth={true} duration={500}>
             <SignUpButton />
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       {/* social icons are hidden will only show up when the screen greater than large */}
