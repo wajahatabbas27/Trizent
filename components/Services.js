@@ -81,14 +81,14 @@ const Services = () => {
         {serviceDropdown.map((item) => (
           <div
             key={item.id}
-            className='mx-20 bg-gray-200  h-[300px] min-w-[190px] sm:min-w-[220px] rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-300 shadow-lg flex flex-col justify-center items-center'
+            className='mx-20 bg-gray-200  h-[300px] min-w-[180px] sm:min-w-[220px] rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-300 shadow-lg flex flex-col justify-center items-center'
             onClick={() => {
               setOpen(true);
               setModalData(item);
             }}
           >
             <img src={item.image} alt='services' className='w-[150px]' />
-            <h1 className='text-base  md:text-lg font-bold pt-10'>
+            <h1 className='text-sm  md:text-lg font-bold pt-10'>
               {item.title}
             </h1>
           </div>
