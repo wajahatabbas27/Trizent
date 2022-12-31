@@ -5,6 +5,7 @@ import MainScreen from "../components/MainScreen";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import SlickServices from "../components/SlickServices";
+import Team from "../components/Team";
 
 export default function Home() {
   return (
@@ -17,11 +18,11 @@ export default function Home() {
         <MainScreen />
         <Services />
         {/* <SlickServices/> */}
+        <Team />
         <Business />
         <Contact />
         <Footer />
       </main>
-
     </div>
   );
 }

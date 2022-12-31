@@ -34,7 +34,7 @@ const Business = () => {
   ];
 
   return (
-    <div id='team' className='px-10 py-44 lg:flex bg-blue-200 space-x-8'>
+    <div  className='px-10 py-44 lg:flex bg-blue-200 space-x-8'>
       {/* Build business heading */}
       <div className='lg:w-[1000px] flex flex-col items-center space-y-10 lg:pl-20'>
         <h1 className='text-4xl font-bold'>Develop your business with us.</h1>
