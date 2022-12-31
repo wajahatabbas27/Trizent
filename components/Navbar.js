@@ -7,12 +7,13 @@ import Dropdown from "./Dropdown";
 import {
   FaBars,
   FaTimes,
-  FaGithub,
+  FaTwitter,
   FaInstagram,
   FaLinkedin,
-  FaTree
+  FaTree,
+  FaFacebook,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+// import { HiOutlineMail } from "react-icons/hi";
 
 
 
@@ -115,7 +116,7 @@ const Navbar = () => {
         <ul>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 p-4'>
             <a
-              href=''
+              href='http://linkedin.com/in/trizent-studio-b4842925b'
               target='_blank'
               rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
@@ -123,29 +124,29 @@ const Navbar = () => {
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#00acee]'>
             <a
               href=''
               target='_blank'
               rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
             >
-              Github <FaGithub size={30} />
+              Twitter <FaTwitter size={30} />
             </a>
           </li>
-          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+          <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3b5998]'>
             <a
-              href=''
+              href='https://web.facebook.com/profile.php?id=100089158297541'
               target='_blank'
               rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
             >
-              Mail <HiOutlineMail size={30} />
+              Facebook <FaFacebook size={30} />
             </a>
           </li>
           <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gradient-to-b from-[#405DE6] to-[#F77737] via-[#C13584]'>
             <a
-              href=''
+              href='https://www.instagram.com/trizentstudio/'
               target='_blank'
               rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'

@@ -38,9 +38,8 @@ const Home = () => {
           <Cursor cursorColor='#FF1493' />
         </h2>
         <p className='text-black py-4 max-w-[700px]'>
-          I&apos;m a full-stack developer specializing in building (and
-          occasionally designing) exceptional digital experiences. Currently,
-          I&apos;m focused on building responsive full-stack web applications.
+          I&apos;m a Content Creator specializing in creating exceptional digital content. Currently,
+          I&apos;m focused on writing rich content.
         </p>
         <div>
           <motion.button
