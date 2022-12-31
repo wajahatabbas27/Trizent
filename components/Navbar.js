@@ -126,7 +126,7 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] p-4 h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#00acee]'>
             <a
-              href=''
+              href='https://twitter.com/ContentGuru5'
               target='_blank'
               rel='noreferrer'
               className='flex items-center w-full justify-between text-gray-300'
