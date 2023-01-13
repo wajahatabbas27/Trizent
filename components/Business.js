@@ -34,7 +34,7 @@ const Business = () => {
   ];
 
   return (
-    <div  className='px-10 py-44 lg:flex bg-blue-200 space-x-8'>
+    <div className='px-10 py-44 lg:flex bg-blue-200 lg:space-x-8'>
       {/* Build business heading */}
       <div className='lg:w-[1000px] flex flex-col items-center space-y-10 lg:pl-20'>
         <h1 className='text-4xl font-bold'>Develop your business with us.</h1>
@@ -63,7 +63,9 @@ const Business = () => {
               alt={icon.description}
               className='w-[150px] my-4 '
             />
-            <h1 className='text-2xl font-semibold my-5'>{icon.heading}</h1>
+            <h1 className='text-2xl font-semibold text-center my-5'>
+              {icon.heading}
+            </h1>
             <p className='text-lg tracking-wide mx-2'>{icon.description}</p>
           </div>
         ))}
