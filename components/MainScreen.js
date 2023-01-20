@@ -37,9 +37,9 @@ const Home = () => {
           {text}
           <Cursor cursorColor='#FF1493' />
         </h2>
-        <p className='text-black py-4 max-w-[700px]'>
-          I&apos;m a Content Creator specializing in creating exceptional digital content. Currently,
-          I&apos;m focused on writing rich content.
+        <p className='text-black py-4 max-w-[700px] text-2xl'>
+          Make Your Brand Stand Out with Professional Content Writing and Logo
+          Design!
         </p>
         <div>
           <motion.button

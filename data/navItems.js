@@ -24,7 +24,7 @@ export const navItems = [
 export const serviceDropdown = [
   {
     id: 1,
-    title: "ARTICAL/blog WRITING",
+    title: "ARTICAL/Blog WRITING",
     path: "#artical",
     image: "https://cdn.crowdcontent.com/publicuploads/blog-postsAnim.svg",
     description:
@@ -57,7 +57,7 @@ export const serviceDropdown = [
   },
   {
     id: 5,
-    title: "Academic writing",
+    title: "Academic Writing",
     path: "#Academic",
     image: "https://cdn.crowdcontent.com/publicuploads/articlesAnim.svg",
     description:
@@ -65,7 +65,7 @@ export const serviceDropdown = [
   },
   {
     id: 6,
-    title: "ebook writing",
+    title: "ebook Writing",
     path: "#ebook",
     image: "https://cdn.crowdcontent.com/publicuploads/metadataAnim.svg",
     description:
@@ -81,11 +81,11 @@ export const serviceDropdown = [
   },
   {
     id: 8,
-    title: "NOTABILITY ARTICALs",
+    title: "Graphic Designing",
     path: "#notability",
     image: "https://cdn.crowdcontent.com/publicuploads/blog-postsAnim.svg",
     description:
-      "We do banner design for websites.We can design a banner for your website that will be eye-catching and effective in promoting your website.We do banner design for websites.Our expert team specialises in banner design for websites. We have a team of experienced designers who can create custom banner designs that are both eye-catching and effective in driving traffic to your website.",
+      "We create powerful visual stories that capture attention, engage and inspire people to take action. Our designs are crafted to convey a message, evoke emotion, and make an impact. Our team of dedicated designers have a wealth of experience and expertise to bring to every project, and create visuals that make a lasting impression. We specialize in creating logos, branding, web design, print design, and more. Whether you are looking for a logo or an entire marketing package, we can provide the highest quality design solutions for your needs.",
   },
   {
     id: 9,
@@ -113,7 +113,7 @@ export const serviceDropdown = [
   },
   {
     id: 12,
-    title: "PRODUCT DISCRIPTIONS",
+    title: "PRODUCT DESCRIPTIONS",
     path: "#product",
     image: "https://cdn.crowdcontent.com/publicuploads/blog-postsAnim.svg",
     description:
@@ -138,10 +138,10 @@ export const serviceDropdown = [
   },
   {
     id: 15,
-    title: "Web developement",
+    title: "Web Developement",
     path: "#web",
     image: "https://cdn.crowdcontent.com/publicuploads/SEO-contentAnim.svg",
     description:
-      "We do banner design for websites.We can design a banner for your website that will be eye-catching and effective in promoting your website.We do banner design for websites.Our expert team specialises in banner design for websites. We have a team of experienced designers who can create custom banner designs that are both eye-catching and effective in driving traffic to your website.",
+      "Our team of web developers specializes in creating custom websites, developing web applications, and performing website maintenance. We have experience in a variety of web technologies, including HTML, CSS, JavaScript, PHP, Node, React, MySQL and NoSQL Databases. Our team is able to work closely with clients to create a website that is tailored to their exact needs and specifications.",
   },
 ];

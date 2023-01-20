@@ -13,6 +13,7 @@ import {
   FaTree,
   FaFacebook,
 } from "react-icons/fa";
+import { useRouter } from "next/router";
 // import { HiOutlineMail } from "react-icons/hi";
 
 
@@ -20,6 +21,7 @@ import {
 const Navbar = () => {
   // dropdown show on click
   const [dropdown, setDropdown] = useState(false);
+  const router = useRouter()
 
   // responsive screens
   const [nav, setNav] = useState(false);
@@ -30,9 +32,17 @@ const Navbar = () => {
     <nav className='fixed w-full h-[100px] flex px-2 md:px-12 justify-between items-center z-30 bg-blue-200 text-black'>
       <div className='flex w-48 items-center justify-between'>
         <Link to='home'>
-          <h1 className='cursor-pointer text-4xl'>TRIZENT</h1>
+          <div
+            className='cursor-pointer '
+            onClick={() => {
+              router.push("/");
+            }}
+          >
+            <img src='https://i.ibb.co/nQFNZYk/Oy4-MWm-K-400x400-removebg-preview-removebg-preview.png' alt="logo" className="w-[60px] md:w-[80px]"/>
+  
+          </div>
         </Link>
-        <FaTree className='text-4xl' />
+        {/* <FaTree className='text-4xl' /> */}
       </div>
       <div className='hidden lg:flex space-x-6 items-center justify-center text-center '>
         <ul className='flex space-x-6 text-center justify-center  items-center h-[13vh] '>
@@ -76,7 +86,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute bg-gradient-to-r from-blue-800 to-indigo-200 text-black top-0 left-0 w-full h-screen flex flex-col justify-center items-center cursor-pointer hover:text-black"
+            : "absolute bg-blue-200 text-black top-0 left-0 w-full h-screen flex flex-col justify-center items-center cursor-pointer hover:text-black"
         }
       >
         <li className='py-6 text-4xl'>

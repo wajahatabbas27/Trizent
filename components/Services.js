@@ -94,7 +94,7 @@ const Services = () => {
           </div>
         ))}
 
-        <Modal open={open} onClose={(e) => setOpen(false)}>
+        <Modal open={open} onClose={() => setOpen(false)}>
           <div className=' h-screen bg-blue-200 m-8 md:m-16 lg:m-20 shadow-lg flex flex-col  items-center '>
             <h1 className='text-3xl font-semibold pt-16 text-center'>
               {modalData?.title}
@@ -103,7 +103,11 @@ const Services = () => {
               {modalData?.description}
             </p>
             <button className='flex justify-center cursor-pointer w-44 px-3 py-2 text-center m-3 border-none text-white bg-gradient-to-r from-indigo-300 to-blue-600 rounded-md hover:to-blue-800 active:transform active:scale-95'>
-              <Link to='contact' onClick={() => setOpen(false)}>
+              <Link
+                to='contact'
+                onClick={() => setOpen(false)}
+                className='transition duration-150 ease-in-out'
+              >
                 Order Now
               </Link>
             </button>
