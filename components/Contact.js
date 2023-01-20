@@ -18,7 +18,7 @@ const Contact = () => {
           </p>
           <p className='text-gray-300 py-4'>
             &#047;&#047; Submit the form below or shoot me an email -
-            trizent@gmail.com to start working..
+            trizentstudio@gmail.com to start working..
           </p>
         </div>
         <input
