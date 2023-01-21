@@ -4,10 +4,10 @@ const Team = () => {
   return (
     <main
       id='team'
-      className=' bg-blue-200  grid grid-col-1 md:grid-cols-2 justify-center items-center md:px-20 md:py-20 space-y-4 md:space-y-0 md:space-x-4'
+      className=' bg-[#EECFCD]  grid grid-col-1 md:grid-cols-2 justify-center items-center md:px-20 md:py-20 space-y-4 md:space-y-0 md:space-x-4'
     >
       {/* team heading/descriptions   */}
-      <div className='bg-gray-100 rounded-lg p-6'>
+      <div className='bg-[#EECFCD]  rounded-lg p-6'>
         <h1 className='text-4xl font-bold underline py-4'>Our Team</h1>
         <p className='text-lg'>
           We are equipped with quality content writers who are experts in their

@@ -56,18 +56,19 @@ const Services = () => {
   return (
     <div
       id='services'
-      className='h-[700px]  w-full flex  justify-center items-center bg-blue-400'
+      className='h-[500px]  w-full flex  justify-center items-center bg-gradient-to-t from-[#EECFCD] via-pink-300 to-[#FFCACD]'
     >
+      
       {/* scroll cards  */}
       <div
         id='slider'
-        className='w-full flex rounded-md overflow-hidden gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide bg-white py-4 md:mx-28'
+        className='w-full flex rounded-md overflow-hidden gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide bg-gradient-to-r from-pink-100 via-pink-200 to-pink-100 py-4 md:mx-28'
         // onScroll={removeButton}
       >
         {/* left arrow */}
         {left && (
           <button
-            className='absolute w-[60px] h-[310px]  py-4  z-20 bg-white justify-center items-center left-13'
+            className='absolute w-[60px] h-[310px]  py-4  z-20 bg-pink-100 justify-center items-center left-13'
             onClick={slideLeft}
           >
             <img
@@ -95,14 +96,15 @@ const Services = () => {
         ))}
 
         <Modal open={open} onClose={() => setOpen(false)}>
-          <div className=' h-screen bg-blue-200 m-8 md:m-16 lg:m-20 shadow-lg flex flex-col  items-center '>
-            <h1 className='text-3xl font-semibold pt-16 text-center'>
+          <div className=' h-screen bg-[#EECFCD] m-8 md:m-16 lg:m-20 shadow-lg flex flex-col  items-center '>
+            <img src={modalData?.image} alt="" className="w-[150px] pt-8"/>
+            <h1 className='text-3xl font-semibold pt-10 text-center'>
               {modalData?.title}
             </h1>
-            <p className='text-sm md:text-lg py-16 text-center px-4  sm:px-8 md:px-16 lg:px-36'>
+            <p className='text-sm md:text-lg py-8 text-center px-4  sm:px-8 md:px-16 lg:px-36'>
               {modalData?.description}
             </p>
-            <button className='flex justify-center cursor-pointer w-44 px-3 py-2 text-center m-3 border-none text-white bg-gradient-to-r from-indigo-300 to-blue-600 rounded-md hover:to-blue-800 active:transform active:scale-95'>
+            <button className='flex justify-center cursor-pointer w-44 px-3 py-2 text-center m-3  text-black  border-black bg-gradient-to-r from-pink-500 to-[#FFCACD] rounded-md hover:to-pink-400 active:transform active:scale-95'>
               <Link
                 to='contact'
                 onClick={() => setOpen(false)}
@@ -116,7 +118,7 @@ const Services = () => {
         {/* right button  */}
         {right && (
           <button
-            className='absolute w-[60px] h-[310px]  py-4  z-20 bg-white justify-center items-center sm:right-28 right-1 '
+            className='absolute w-[60px] h-[310px]  py-4  z-20 bg-pink-100 justify-center items-center sm:right-28 right-1 '
             onClick={slideRight}
           >
             <img

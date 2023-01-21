@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div
       id='home'
-      className='bg-blue-200 h-screen w-full  pt-32 xs:pt-0 pb-18 xs:pb-0 mb-0  '
+      className='bg-gradient-to-b from-[#EECFCD] via-pink-300 to-[#FFCACD] h-screen w-full  pt-32 xs:pt-0 pb-18 xs:pb-0 mb-0  '
     >
       {/* Container */}
       <div className='max-w-[1000px] h-full mx-auto px-8 flex flex-col justify-center '>
@@ -26,7 +26,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2.5 }}
-          className='text-black'
+          className='text-black text-xl'
         >
           A better way to get work done
         </motion.p>
@@ -47,7 +47,7 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2 }}
-            className='group text-black  border-2 border-black px-6 py-3 my-2 flex items-center hover:bg-blue-600 hover:border-blue-600'
+            className='group text-black  border-2 border-black px-6 py-3 my-2 flex items-center hover:bg-[#FFCACD] hover:border-'
           >
             View Work
             <span className='group-hover:rotate-90 duration-300'>

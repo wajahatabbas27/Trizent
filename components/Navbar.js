@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 // import { FaBars, FaTimes, FaTree } from "react-icons/fa";
 import { navItems } from "../data/navItems";
-import SignUpButton from "./SignUpButton";
-import Dropdown from "./Dropdown";
+// import SignUpButton from "./SignUpButton";
+// import Dropdown from "./Dropdown";
 import {
   FaBars,
   FaTimes,
@@ -29,7 +29,7 @@ const Navbar = () => {
   const handleclick = () => setNav(!nav);
 
   return (
-    <nav className='fixed w-full h-[100px] flex px-2 md:px-12 justify-between items-center z-30 bg-blue-200 text-black'>
+    <nav className='fixed w-full h-[100px] flex px-2 md:px-12 justify-between items-center z-30 bg-black text-[#FFCACD]'>
       <div className='flex w-48 items-center justify-between'>
         <Link to='home'>
           <div
@@ -38,8 +38,11 @@ const Navbar = () => {
               router.push("/");
             }}
           >
-            <img src='https://i.ibb.co/nQFNZYk/Oy4-MWm-K-400x400-removebg-preview-removebg-preview.png' alt="logo" className="w-[60px] md:w-[80px]"/>
-  
+            <img
+              src='https://i.ibb.co/nQFNZYk/Oy4-MWm-K-400x400-removebg-preview-removebg-preview.png'
+              alt='logo'
+              className='w-[60px] md:w-[80px]'
+            />
           </div>
         </Link>
         {/* <FaTree className='text-4xl' /> */}
@@ -86,7 +89,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute bg-blue-200 text-black top-0 left-0 w-full h-screen flex flex-col justify-center items-center cursor-pointer hover:text-black"
+            : "absolute bg-blue-200 text-[#FFC3AB] top-0 left-0 w-full h-screen flex flex-col justify-center items-center cursor-pointer hover:text-[#FFC3AB]"
         }
       >
         <li className='py-6 text-4xl'>
