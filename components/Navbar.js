@@ -80,7 +80,11 @@ const Navbar = () => {
 
       {/* responsive bars icon button for smaller screens like mobile */}
       <div onClick={handleclick} className='lg:hidden z-10'>
-        {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
+        {!nav ? (
+          <FaBars size={30} />
+        ) : (
+          <FaTimes size={30} className='bg-black' />
+        )}
       </div>
 
       {/* mobile menu */}
@@ -89,7 +93,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute bg-blue-200 text-[#FFC3AB] top-0 left-0 w-full h-screen flex flex-col justify-center items-center cursor-pointer hover:text-[#FFC3AB]"
+            : "absolute bg-gradient-to-b from-[#EECFCD] via-pink-300 to-[#FFCACD] text-black top-0 left-0 w-full h-screen flex flex-col justify-center items-center cursor-pointer hover:text-[#FFC3AB]"
         }
       >
         <li className='py-6 text-4xl'>
